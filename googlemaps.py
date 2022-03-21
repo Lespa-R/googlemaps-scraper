@@ -87,7 +87,7 @@ class GoogleMapsScraper:
         if method == 'squares':
             search_point_url_list = self._gen_search_points_from_square(keyword_list=keyword_list)
         else:
-            # search_point_url = f"https://www.google.com/maps/search/{row['keyword']}/@{str(row['longitude'])},{str(row['latitude'])},{str(row['zoom'])}z"
+            search_point_url = f"https://www.google.com/maps/search/{row['keyword']}/@{str(row['longitude'])},{str(row['latitude'])},{str(row['zoom'])}z"
             # TODO:
             pass
 
